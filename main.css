@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/*=================== BASE ===================*/
+:root {
+  --blue: #2f4d76;
+  --yellow: #FFD700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", serif;
+  background-color: var(--blue);
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+
+  
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*=================== NAV ===================*/
+nav{
+  background-color: var(--blue);
+  position: fixed;
+  width: 100%;
+  margin-top: 20px;
+  height: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block;
+}
+nav ul li a {
+  padding-bottom: 5px;
+  position: relative;
+}
+nav ul li a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: var(--yellow);
+  transition: width 0.5s ease-in-out;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav .sol img{
+  height: 50px;
+  width: 100px;
+}
+nav .sol{
+  margin-left: 100px;
+}
+nav .sag ul li{
+  font-size: larger;
+}
+nav .sag{
+  width: 50%;
+  display: flex;
+  gap: 15%;
+}
+nav ul{
+  gap: 50px;
+}
+
+nav img{
+  
+  height: 10%;
+  width: 10%;
+}
+
+
+nav .sag i {
+  font-size: 25px;
+  color: #ffffff;
+  position: relative;
+}
+
+nav .sag .anaresim{
+  background-color: red;
+
+}
+
+nav .sag i::after {
+  content: "0"; /*ALIŞVERİŞ 0 I*/
+  position: absolute;
+  top: 15px;
+  right: -5px;
+  background-color: var(--yellow);
+  color: black;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/*=================== MAIN ===================*/
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 10%;
+  height: 100vh;
+}
+.Home{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Home .sol{
+  width: 60%;
+  gap: 30%;
+}
+.Home .sol .title h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.Home .sol .description p {
+  
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 450px;
+  margin: 10px ;
+}
+
+
+.Home .sol .button button {
+  
+  background-color: var(--blue);
+  color: #ffffff;
+  border: 1px solid #ffffff ;
+  padding: 15px 30px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Home .sol .button button:hover {
+  background-color: var(--yellow); 
+  color: black; 
+  
+}
+
+
+
+.arkaplan{
+  position: absolute;
+  z-index: -1;
+  height: 300px;
+  width: 400px;
+  right: 200px;
+  opacity: 0.1;
+}
+.anaresim{
+  height: 500px;
+  width: 1100px;
+}
+@media (max-width:768px) {
+  .logo {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    left: 0;
+    font-size: small;
+  }
+  .logo .img {
+    width: 50%;
+  }
+  
+}
+    
+@media (max-width: 500px) {
+  .Home {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+
+  .Home .sol {
+    width: 90%; 
+    left: 0;
+  }
+
+  .Home .right .arkaplan {
+    width: 30%; 
+    right: 10%; 
+  }
+
+  .Home .right .anaresim {
+    width: 70%; 
+    height: auto; 
+  }
+}
+
+@media (max-width: 768px) {
+  .Home {
+    flex-direction: column-reverse;
+    text-align: center;
+    font-size: small;
+  }
+
+  .Home .sol {
+    width: 100%; 
+  }
+  .Home .sag {
+    text-align: left;
+  }
+
+  .Home .sag .arkaplan {
+    width: 40%; 
+    height: 20%;
+    /*right: 0; */
+  }
+
+  .Home .sag .anaresim {
+    width: 90%; 
+    height: auto;
+  }
+}
+
+
+
+
+/*=================== MAIN ===================*/
+
+/*=================== RESPONSIVE DESIGN ===================*/
