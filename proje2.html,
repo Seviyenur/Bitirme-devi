@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gridea Forum</title>
+    <style>
+        body {
+            font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f8f8f8;
+            
+        }
+
+        .container {
+            width: 100%;
+            max-width: 960px;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .menu {
+            display: flex;
+            gap: 10px;
+        }
+
+        .menu button {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 20px;
+            background-color: #c9eef0;
+            cursor: pointer;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .article {
+            margin-top: 40px;
+        }
+
+        .article h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            text-align: left;
+            word-spacing: 15px; /* Kelimeler arası boşluk */
+            width: 75%; /* Başlığın uzunluğunu kısıtla */
+            
+
+           
+        }
+
+        
+
+        .article p {
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+
+        .italiclast {
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        footer {
+            width: 65%;
+            
+            background-color: #b7e1e3;
+            
+            padding: 16px 0;
+            
+           
+        }
+        .footer-content {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            color: #222;
+         }
+         .footer-content .left {
+            font-weight: bold;
+            color: #222;
+        }
+
+        .footer-content .right {
+            font-weight: normal;
+            color: #444; /* Daha sade bir ton */
+        }
+
+
+        .italic {
+            font-style: italic;
+        }   
+        .article p {
+           font-size: 15px;
+           line-height: 1.6;
+           margin: 0;
+           padding: 0;
+}
+ 
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h2>Gridea Forum</h2>
+            <div class="menu">
+                <button>Giriş Yap</button>
+                <button>Yaz</button>
+            </div>
+        </header>
+
+        <img src="orijinalresim.png" alt="Yemek Fotoğrafı">
+
+        <div class="article">
+            <h2>Mutfağın Büyülü Dünyasında Bir Gezi</h2>
+
+            <p><span class="highlight">Yemek hazırlamak</span>, bazen bir sanata, bazen de bir çılgınlığa dönüşebiliyor. Özellikle de 
+            <span class="italic">“Bir tabak daha alsam mı?”</span> sorusunu kendimize sıkça sorduğumuz o anlarda.
+
+            Aslında yemek, sadece karın doyurmak için değil, tam anlamıyla bir deneyim. Hangi aşamada başladığınız önemli değil; mutfakta bir kez adım attığınızda, geri dönmek zor. O an bir Michelin yıldızlı şef gibi hissediyorsunuz, ama sonuçta “Bu yemek neden böyle oldu?” diye kendinize sorarken buluyorsunuz.
+
+            İlk başlarda, mis gibi bir yemek hazırlayacağınızı hayal ediyorsunuz. Oysa bir bakıyorsunuz, en sevdiğiniz yemeği yapmaya çalışırken, tarife sadık kalmayı unutmuş ve sonrasında “Neyse, biraz baharat eklerim, güzel olur!” demişsiniz. Gerçekten de bazen, mutfağın en büyük sırrı, birkaç baharatla olan mucizeler.</p>
+
+            <p>Ama bir yemek hazırlamak sadece tatla ilgili değil, <span class="underline">bir paylaşma deneyimi</span>. O sofranın etrafında toplanan insanlarla birlikte yediğiniz her lokma, aslında bir bağ kurma biçimi..O anın içinde kayboşmuşken , tatlılar devreye girmeli.Evet tatlı konusu!Kimse tatlısız yemet bitiremez değil mi ?
+                "Bir tatlı daha!"derken,tam üçüncü dilimi aldığınızı fark etmiyorsunuz bile.Ama bu,o anı tam anlamıyla yaşamının bir parçası.Kimsenin diyet yapmazken mutfakta,yemek sonrası gelen o minik suçluluk duygusuyla "Bir dahaki sefere daha dikkatli olacağım!"demekten alıkoyamaz kendini . </p>
+
+            <p class="italiclast">Sonuçta yemek sadece midemizi değil, ruhumuzu da doyuruyor. Ne olursa olsun, o yemeği yerken duyduğumuz mutluluk, her bir kaloriye değiyor. Çünkü yemek, sadece fiziksel değil, aynı zamanda duygusal bir yolculuk. Hadi, o yolda birlikte gidelim ve bir sonraki sofrada görüşmek üzere!</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+              <span class="left">Gridea</span>
+              <span class="right">AYBÜ BİLTEK Kuruluşu</span>
+        </div>
+        
+    </footer>
+
+</body>
+</html>
