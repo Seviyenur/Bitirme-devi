@@ -132,10 +132,10 @@
     <div class="container">
         <header>
             <h2>Gridea Forum</h2>
-            <div class="menu">
-                <button>Giriş Yap</button>
-                <button>Yaz</button>
-            </div>
+        <div class="menu">
+            <a href="login.html">Giriş Yap</a>
+            <button>Yaz</button>
+        </div>
         </header>
 
         <img src="orijinalresim.png" alt="Yemek Fotoğrafı">
